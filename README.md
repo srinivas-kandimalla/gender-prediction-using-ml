@@ -4,7 +4,7 @@ A Machine Learning web application that predicts a person's gender from their fi
 
 ## Application Preview
 
-![Application Preview](app_preview.png)
+<img src="assets/app_preview.png" alt="Application Preview" style="max-width:100%;height:auto;border-radius:8px;" />
 
 ---
 
