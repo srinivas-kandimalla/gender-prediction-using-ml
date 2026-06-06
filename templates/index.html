@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Powered Gender Prediction</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <div class="topbar">
+            <div class="badge">ML Powered Gender Prediction</div>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark mode</button>
+        </div>
+
+        <section class="hero-card">
+            <div class="hero-copy">
+                <h1>Predict Gender from Names</h1>
+            </div>
+
+            <div class="form-panel">
+                <label class="input-label" for="nameInput">Enter a name</label>
+                <div class="field-row">
+                    <input id="nameInput" type="text" placeholder="e.g. Sneha" aria-label="Name input" autocomplete="off" />
+                    <button id="clearButton" class="clear-button" type="button" aria-label="Clear name input">Clear</button>
+                </div>
+                <div class="action-row">
+                    <button id="predictButton" type="button" class="predict-button">Predict</button>
+                </div>
+            </div>
+
+            <div id="resultCard" class="result-card hidden" aria-live="polite">
+                <div class="result-label">Prediction Result</div>
+                <div class="result-value" id="resultGender">—</div>
+                <div class="result-meta">
+                    <span id="resultConfidence">Confidence: —</span>
+                    <span id="resultStatus">Status: Waiting</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
