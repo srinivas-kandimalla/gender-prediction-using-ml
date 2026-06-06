@@ -15,9 +15,12 @@ env/
 
 # Model and artifacts
 *.joblib
-*.png
-*.txt
+/outputs/*.png
+outputs/*.txt
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Allow images in assets folder
+!assets/*.png
